@@ -1,0 +1,140 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+li.nav-item {
+  color: #fff;
+  font-style: bold;
+}
+.bg-image {
+  background-image: url('https://i0.wp.com/cinemaeafins.com.br/wp-content/uploads/2023/02/netflix-fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bg-image::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.9); /* Altere o valor de alfa conforme necessário para escurecer ou clarear a imagem */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+p {
+  color: white;
+  padding-left: 100px;
+}
+
+main {
+  padding-top: 150px;
+}
+
+main ul li {
+  color: #fff;
+  font-size: 60px;
+  list-style: none;
+  font-family: 'DejaVu Sans Mono', monospace;
+}
+
+main ul {
+  padding-left: 100px;
+}
+
+
+button.btn-primary, button.btn-secondary {
+  border: 1px solid #000;
+  border-radius: 20px;
+  color: #fff;
+}
+
+button.btn-primary {
+  background-color: rgb(219, 61, 121)
+}
+
+button.btn-secondary {
+  background-color: #478eeb
+}
+
+#caracteristicas {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+}
+
+.carousel-item img {
+  width: 120px;
+}
+
+#agora,
+#categorias, h4 {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+}
+
+#agora img {
+  padding: 20px;
+  max-width: 1000px;
+}
+
+footer {
+  background-color: #0e0e36;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.footer-item {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.footer-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.footer-item p {
+  margin: 0;
+  font-size: 14px;
+}
+.footer-item {
+  padding: 10px;
+}
+
+.footer-item i {
+  border: 1px solid black;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
